@@ -1567,8 +1567,8 @@ impl Server {
           let info = Index::inscription_info(&index, query);
           if info.is_ok() {
             let res = info.unwrap();
-            if res.is_some() {
-              response.push(res.unwrap());
+            if let Some(t) = res {
+              response.push(t);
             }
           }
         }
