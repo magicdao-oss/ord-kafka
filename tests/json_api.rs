@@ -175,7 +175,8 @@ fn get_inscription() {
       metadata: None,
       metaprotocol: None,
       content_media: Some("Text".to_owned()),
-      content_body: None
+      // FOO
+      content_body: Some("Rk9P".to_owned())
     }
   )
 }
